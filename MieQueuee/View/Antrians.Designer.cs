@@ -10,14 +10,14 @@
         private void InitializeComponent()
         {
             dataGridViewAntrian = new DataGridView();
-            buttonSelesai = new Button();
-            labelJudul = new Label();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
+            buttonSelesai = new Button();
+            labelJudul = new Label();
             button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewAntrian).BeginInit();
             SuspendLayout();
@@ -33,24 +33,6 @@
             dataGridViewAntrian.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridViewAntrian.Size = new Size(760, 300);
             dataGridViewAntrian.TabIndex = 1;
-            // 
-            // buttonSelesai
-            // 
-            buttonSelesai.Location = new Point(650, 400);
-            buttonSelesai.Name = "buttonSelesai";
-            buttonSelesai.Size = new Size(130, 40);
-            buttonSelesai.TabIndex = 2;
-            buttonSelesai.Text = "Tandai Selesai";
-            buttonSelesai.Click += buttonSelesai_Click;
-            // 
-            // labelJudul
-            // 
-            labelJudul.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            labelJudul.Location = new Point(20, 20);
-            labelJudul.Name = "labelJudul";
-            labelJudul.Size = new Size(300, 40);
-            labelJudul.TabIndex = 0;
-            labelJudul.Text = "Daftar Antrian";
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -100,6 +82,24 @@
             dataGridViewTextBoxColumn6.ReadOnly = true;
             dataGridViewTextBoxColumn6.Width = 150;
             // 
+            // buttonSelesai
+            // 
+            buttonSelesai.Location = new Point(650, 400);
+            buttonSelesai.Name = "buttonSelesai";
+            buttonSelesai.Size = new Size(130, 40);
+            buttonSelesai.TabIndex = 2;
+            buttonSelesai.Text = "Tandai Selesai";
+            buttonSelesai.Click += buttonSelesai_Click;
+            // 
+            // labelJudul
+            // 
+            labelJudul.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            labelJudul.Location = new Point(20, 20);
+            labelJudul.Name = "labelJudul";
+            labelJudul.Size = new Size(300, 40);
+            labelJudul.TabIndex = 0;
+            labelJudul.Text = "Daftar Antrian";
+            // 
             // button1
             // 
             button1.Location = new Point(503, 400);
@@ -111,6 +111,7 @@
             // 
             // FormAntrian
             // 
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 480);
             Controls.Add(button1);
             Controls.Add(labelJudul);

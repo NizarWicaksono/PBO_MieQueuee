@@ -32,7 +32,7 @@
             labelNama.AutoSize = true;
             labelNama.Location = new Point(30, 30);
             labelNama.Name = "labelNama";
-            labelNama.Size = new Size(113, 25);
+            labelNama.Size = new Size(76, 15);
             labelNama.TabIndex = 0;
             labelNama.Text = "Nama Menu:";
             // 
@@ -41,7 +41,7 @@
             labelHarga.AutoSize = true;
             labelHarga.Location = new Point(30, 70);
             labelHarga.Name = "labelHarga";
-            labelHarga.Size = new Size(64, 25);
+            labelHarga.Size = new Size(42, 15);
             labelHarga.TabIndex = 2;
             labelHarga.Text = "Harga:";
             // 
@@ -49,14 +49,14 @@
             // 
             textBoxNama.Location = new Point(170, 30);
             textBoxNama.Name = "textBoxNama";
-            textBoxNama.Size = new Size(200, 31);
+            textBoxNama.Size = new Size(200, 23);
             textBoxNama.TabIndex = 1;
             // 
             // textBoxHarga
             // 
             textBoxHarga.Location = new Point(170, 67);
             textBoxHarga.Name = "textBoxHarga";
-            textBoxHarga.Size = new Size(200, 31);
+            textBoxHarga.Size = new Size(200, 23);
             textBoxHarga.TabIndex = 3;
             // 
             // buttonSimpan
@@ -71,6 +71,7 @@
             // 
             // FormUpdateMenu
             // 
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(398, 267);
             Controls.Add(buttonSimpan);
             Controls.Add(textBoxHarga);

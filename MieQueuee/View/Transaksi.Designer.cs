@@ -51,26 +51,26 @@
             // 
             // comboBoxMenu
             // 
-            comboBoxMenu.Location = new Point(38, 88);
-            comboBoxMenu.Margin = new Padding(4);
+            comboBoxMenu.Location = new Point(27, 53);
+            comboBoxMenu.Margin = new Padding(3, 2, 3, 2);
             comboBoxMenu.Name = "comboBoxMenu";
-            comboBoxMenu.Size = new Size(249, 33);
+            comboBoxMenu.Size = new Size(176, 23);
             comboBoxMenu.TabIndex = 0;
             // 
             // textBoxJumlah
             // 
-            textBoxJumlah.Location = new Point(312, 88);
-            textBoxJumlah.Margin = new Padding(4);
+            textBoxJumlah.Location = new Point(218, 53);
+            textBoxJumlah.Margin = new Padding(3, 2, 3, 2);
             textBoxJumlah.Name = "textBoxJumlah";
-            textBoxJumlah.Size = new Size(124, 31);
+            textBoxJumlah.Size = new Size(88, 23);
             textBoxJumlah.TabIndex = 1;
             // 
             // buttonTambah
             // 
-            buttonTambah.Location = new Point(462, 88);
-            buttonTambah.Margin = new Padding(4);
+            buttonTambah.Location = new Point(323, 53);
+            buttonTambah.Margin = new Padding(3, 2, 3, 2);
             buttonTambah.Name = "buttonTambah";
-            buttonTambah.Size = new Size(125, 38);
+            buttonTambah.Size = new Size(88, 23);
             buttonTambah.TabIndex = 2;
             buttonTambah.Text = "Tambah";
             buttonTambah.Click += buttonTambah_Click;
@@ -79,12 +79,12 @@
             // 
             dataGridViewKeranjang.ColumnHeadersHeight = 34;
             dataGridViewKeranjang.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4 });
-            dataGridViewKeranjang.Location = new Point(38, 150);
-            dataGridViewKeranjang.Margin = new Padding(4);
+            dataGridViewKeranjang.Location = new Point(27, 90);
+            dataGridViewKeranjang.Margin = new Padding(3, 2, 3, 2);
             dataGridViewKeranjang.Name = "dataGridViewKeranjang";
             dataGridViewKeranjang.ReadOnly = true;
             dataGridViewKeranjang.RowHeadersWidth = 62;
-            dataGridViewKeranjang.Size = new Size(625, 200);
+            dataGridViewKeranjang.Size = new Size(438, 120);
             dataGridViewKeranjang.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -122,19 +122,18 @@
             // labelTotal
             // 
             labelTotal.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            labelTotal.Location = new Point(38, 455);
-            labelTotal.Margin = new Padding(4, 0, 4, 0);
+            labelTotal.Location = new Point(27, 273);
             labelTotal.Name = "labelTotal";
-            labelTotal.Size = new Size(368, 29);
+            labelTotal.Size = new Size(258, 17);
             labelTotal.TabIndex = 4;
             labelTotal.Text = "Total: Rp 0";
             // 
             // buttonBayar
             // 
-            buttonBayar.Location = new Point(500, 448);
-            buttonBayar.Margin = new Padding(4);
+            buttonBayar.Location = new Point(350, 269);
+            buttonBayar.Margin = new Padding(3, 2, 3, 2);
             buttonBayar.Name = "buttonBayar";
-            buttonBayar.Size = new Size(162, 50);
+            buttonBayar.Size = new Size(113, 30);
             buttonBayar.TabIndex = 5;
             buttonBayar.Text = "Bayar";
             buttonBayar.Click += buttonBayar_Click;
@@ -143,61 +142,65 @@
             // 
             labelJudul.BackColor = Color.Transparent;
             labelJudul.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            labelJudul.Location = new Point(38, 25);
-            labelJudul.Margin = new Padding(4, 0, 4, 0);
+            labelJudul.Location = new Point(27, 15);
             labelJudul.Name = "labelJudul";
-            labelJudul.Size = new Size(199, 52);
+            labelJudul.Size = new Size(139, 31);
             labelJudul.TabIndex = 6;
             labelJudul.Text = "Transaksi";
             // 
             // button1
             // 
-            button1.Location = new Point(500, 510);
-            button1.Margin = new Padding(4);
+            button1.Location = new Point(350, 306);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(162, 38);
+            button1.Size = new Size(113, 23);
             button1.TabIndex = 7;
             button1.Text = "Kembali";
             button1.Click += button1_Click;
             // 
             // txtUserId
             // 
-            txtUserId.Location = new Point(200, 364);
+            txtUserId.Location = new Point(140, 218);
+            txtUserId.Margin = new Padding(2, 2, 2, 2);
             txtUserId.Name = "txtUserId";
-            txtUserId.Size = new Size(200, 31);
+            txtUserId.Size = new Size(141, 23);
             txtUserId.TabIndex = 5;
             txtUserId.TextChanged += txtUserId_TextChanged;
             // 
             // labelUserId
             // 
             labelUserId.AutoSize = true;
-            labelUserId.Location = new Point(38, 370);
+            labelUserId.Location = new Point(27, 222);
+            labelUserId.Margin = new Padding(2, 0, 2, 0);
             labelUserId.Name = "labelUserId";
-            labelUserId.Size = new Size(70, 25);
+            labelUserId.Size = new Size(44, 15);
             labelUserId.TabIndex = 4;
             labelUserId.Text = "User ID";
             // 
             // txtNamaPelanggan
             // 
-            txtNamaPelanggan.Location = new Point(200, 407);
+            txtNamaPelanggan.Location = new Point(140, 244);
+            txtNamaPelanggan.Margin = new Padding(2, 2, 2, 2);
             txtNamaPelanggan.Name = "txtNamaPelanggan";
-            txtNamaPelanggan.Size = new Size(250, 31);
+            txtNamaPelanggan.Size = new Size(176, 23);
             txtNamaPelanggan.TabIndex = 7;
             // 
             // labelNamaPelanggan
             // 
             labelNamaPelanggan.AutoSize = true;
-            labelNamaPelanggan.Location = new Point(38, 410);
+            labelNamaPelanggan.Location = new Point(27, 246);
+            labelNamaPelanggan.Margin = new Padding(2, 0, 2, 0);
             labelNamaPelanggan.Name = "labelNamaPelanggan";
-            labelNamaPelanggan.Size = new Size(146, 25);
+            labelNamaPelanggan.Size = new Size(98, 15);
             labelNamaPelanggan.TabIndex = 6;
             labelNamaPelanggan.Text = "Nama Pelanggan";
             // 
             // FormTransaksi
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(725, 570);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(508, 342);
             Controls.Add(comboBoxMenu);
             Controls.Add(textBoxJumlah);
             Controls.Add(buttonTambah);
@@ -210,7 +213,7 @@
             Controls.Add(buttonBayar);
             Controls.Add(labelJudul);
             Controls.Add(button1);
-            Margin = new Padding(4);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FormTransaksi";
             Text = "FormTransaksi";
             ((System.ComponentModel.ISupportInitialize)dataGridViewKeranjang).EndInit();

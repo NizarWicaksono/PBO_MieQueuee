@@ -19,16 +19,16 @@
         private void InitializeComponent()
         {
             dataGridViewTransaksi = new DataGridView();
-            dataGridViewDetail = new DataGridView();
-            buttonKembali = new Button();
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn7 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn8 = new DataGridViewTextBoxColumn();
+            dataGridViewDetail = new DataGridView();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
+            buttonKembali = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewTransaksi).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewDetail).BeginInit();
             SuspendLayout();
@@ -48,63 +48,6 @@
             dataGridViewTransaksi.Size = new Size(600, 200);
             dataGridViewTransaksi.TabIndex = 0;
             dataGridViewTransaksi.SelectionChanged += dataGridViewTransaksi_SelectionChanged;
-            // 
-            // dataGridViewDetail
-            // 
-            dataGridViewDetail.AllowUserToAddRows = false;
-            dataGridViewDetail.AllowUserToDeleteRows = false;
-            dataGridViewDetail.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewDetail.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4 });
-            dataGridViewDetail.Location = new Point(12, 230);
-            dataGridViewDetail.MultiSelect = false;
-            dataGridViewDetail.Name = "dataGridViewDetail";
-            dataGridViewDetail.ReadOnly = true;
-            dataGridViewDetail.RowHeadersWidth = 62;
-            dataGridViewDetail.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewDetail.Size = new Size(600, 150);
-            dataGridViewDetail.TabIndex = 1;
-            // 
-            // buttonKembali
-            // 
-            buttonKembali.Location = new Point(520, 400);
-            buttonKembali.Name = "buttonKembali";
-            buttonKembali.Size = new Size(92, 30);
-            buttonKembali.TabIndex = 2;
-            buttonKembali.Text = "Kembali";
-            buttonKembali.UseVisualStyleBackColor = true;
-            buttonKembali.Click += buttonKembali_Click;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.HeaderText = "Menu";
-            dataGridViewTextBoxColumn1.MinimumWidth = 8;
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.ReadOnly = true;
-            dataGridViewTextBoxColumn1.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewTextBoxColumn2.HeaderText = "Harga";
-            dataGridViewTextBoxColumn2.MinimumWidth = 8;
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.ReadOnly = true;
-            dataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewTextBoxColumn3.HeaderText = "Jumlah";
-            dataGridViewTextBoxColumn3.MinimumWidth = 8;
-            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            dataGridViewTextBoxColumn3.ReadOnly = true;
-            dataGridViewTextBoxColumn3.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            dataGridViewTextBoxColumn4.HeaderText = "Subtotal";
-            dataGridViewTextBoxColumn4.MinimumWidth = 8;
-            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            dataGridViewTextBoxColumn4.ReadOnly = true;
-            dataGridViewTextBoxColumn4.Width = 150;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -138,8 +81,66 @@
             dataGridViewTextBoxColumn8.ReadOnly = true;
             dataGridViewTextBoxColumn8.Width = 150;
             // 
+            // dataGridViewDetail
+            // 
+            dataGridViewDetail.AllowUserToAddRows = false;
+            dataGridViewDetail.AllowUserToDeleteRows = false;
+            dataGridViewDetail.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewDetail.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4 });
+            dataGridViewDetail.Location = new Point(12, 230);
+            dataGridViewDetail.MultiSelect = false;
+            dataGridViewDetail.Name = "dataGridViewDetail";
+            dataGridViewDetail.ReadOnly = true;
+            dataGridViewDetail.RowHeadersWidth = 62;
+            dataGridViewDetail.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewDetail.Size = new Size(600, 150);
+            dataGridViewDetail.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.HeaderText = "Menu";
+            dataGridViewTextBoxColumn1.MinimumWidth = 8;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.ReadOnly = true;
+            dataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewTextBoxColumn2.HeaderText = "Harga";
+            dataGridViewTextBoxColumn2.MinimumWidth = 8;
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.ReadOnly = true;
+            dataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewTextBoxColumn3.HeaderText = "Jumlah";
+            dataGridViewTextBoxColumn3.MinimumWidth = 8;
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.ReadOnly = true;
+            dataGridViewTextBoxColumn3.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewTextBoxColumn4.HeaderText = "Subtotal";
+            dataGridViewTextBoxColumn4.MinimumWidth = 8;
+            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            dataGridViewTextBoxColumn4.ReadOnly = true;
+            dataGridViewTextBoxColumn4.Width = 150;
+            // 
+            // buttonKembali
+            // 
+            buttonKembali.Location = new Point(520, 400);
+            buttonKembali.Name = "buttonKembali";
+            buttonKembali.Size = new Size(92, 30);
+            buttonKembali.TabIndex = 2;
+            buttonKembali.Text = "Kembali";
+            buttonKembali.UseVisualStyleBackColor = true;
+            buttonKembali.Click += buttonKembali_Click;
+            // 
             // FormRiwayatTransaksi
             // 
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(630, 450);
             Controls.Add(buttonKembali);
             Controls.Add(dataGridViewDetail);

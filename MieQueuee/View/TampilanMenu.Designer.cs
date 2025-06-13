@@ -42,31 +42,28 @@
             dataGridView1.AllowUserToResizeColumns = false;
             dataGridView1.AllowUserToResizeRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(17, 300);
-            dataGridView1.Margin = new Padding(4, 5, 4, 5);
+            dataGridView1.Location = new Point(12, 180);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1109, 430);
+            dataGridView1.Size = new Size(776, 258);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(499, 128);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(349, 77);
             label1.Name = "label1";
-            label1.Size = new Size(62, 25);
+            label1.Size = new Size(41, 15);
             label1.TabIndex = 1;
             label1.Text = "MENU";
             // 
             // button1
             // 
-            button1.Location = new Point(1019, 252);
-            button1.Margin = new Padding(4, 5, 4, 5);
+            button1.Location = new Point(713, 151);
             button1.Name = "button1";
-            button1.Size = new Size(107, 38);
+            button1.Size = new Size(75, 23);
             button1.TabIndex = 2;
             button1.Text = "Tambah";
             button1.UseVisualStyleBackColor = true;
@@ -74,10 +71,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(889, 252);
-            button2.Margin = new Padding(4, 5, 4, 5);
+            button2.Location = new Point(622, 151);
             button2.Name = "button2";
-            button2.Size = new Size(107, 38);
+            button2.Size = new Size(75, 23);
             button2.TabIndex = 3;
             button2.Text = "Kembali";
             button2.UseVisualStyleBackColor = true;
@@ -85,14 +81,14 @@
             // 
             // TampilanMenu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1143, 750);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(800, 450);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
-            Margin = new Padding(4, 5, 4, 5);
             Name = "TampilanMenu";
             Text = "TampilanMenu";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

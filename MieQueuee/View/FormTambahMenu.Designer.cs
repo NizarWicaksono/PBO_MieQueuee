@@ -24,7 +24,7 @@ namespace MieQueuee.View
             // 
             textBoxNamaMenu.Location = new Point(148, 20);
             textBoxNamaMenu.Name = "textBoxNamaMenu";
-            textBoxNamaMenu.Size = new Size(150, 31);
+            textBoxNamaMenu.Size = new Size(150, 23);
             textBoxNamaMenu.TabIndex = 1;
             textBoxNamaMenu.TextChanged += textBoxNamaMenu_TextChanged;
             // 
@@ -32,7 +32,7 @@ namespace MieQueuee.View
             // 
             textBoxHarga.Location = new Point(148, 52);
             textBoxHarga.Name = "textBoxHarga";
-            textBoxHarga.Size = new Size(150, 31);
+            textBoxHarga.Size = new Size(150, 23);
             textBoxHarga.TabIndex = 3;
             // 
             // labelNama
@@ -40,7 +40,7 @@ namespace MieQueuee.View
             labelNama.AutoSize = true;
             labelNama.Location = new Point(20, 20);
             labelNama.Name = "labelNama";
-            labelNama.Size = new Size(113, 25);
+            labelNama.Size = new Size(76, 15);
             labelNama.TabIndex = 0;
             labelNama.Text = "Nama Menu:";
             // 
@@ -49,7 +49,7 @@ namespace MieQueuee.View
             labelHarga.AutoSize = true;
             labelHarga.Location = new Point(20, 55);
             labelHarga.Name = "labelHarga";
-            labelHarga.Size = new Size(64, 25);
+            labelHarga.Size = new Size(42, 15);
             labelHarga.TabIndex = 2;
             labelHarga.Text = "Harga:";
             // 
@@ -64,6 +64,7 @@ namespace MieQueuee.View
             // 
             // FormTambahMenu
             // 
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(442, 227);
             Controls.Add(labelNama);
             Controls.Add(textBoxNamaMenu);
