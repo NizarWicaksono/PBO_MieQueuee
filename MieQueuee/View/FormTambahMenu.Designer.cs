@@ -73,6 +73,7 @@ namespace MieQueuee.View
             Controls.Add(buttonTambah);
             Name = "FormTambahMenu";
             Text = "Tambah Menu";
+            Load += FormTambahMenu_Load;
             ResumeLayout(false);
             PerformLayout();
         }

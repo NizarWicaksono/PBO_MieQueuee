@@ -80,6 +80,7 @@
             Controls.Add(labelNama);
             Name = "FormUpdateMenu";
             Text = "Update Menu";
+            Load += FormUpdateMenu_Load;
             ResumeLayout(false);
             PerformLayout();
         }

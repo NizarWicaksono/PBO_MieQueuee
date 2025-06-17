@@ -46,5 +46,10 @@ namespace MieQueuee.View
         {
 
         }
+
+        private void FormTambahMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

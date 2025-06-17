@@ -19,7 +19,7 @@ namespace MieQueuee.View
         private void LoadMenuData()
         {
             var controller = new MenuRepositoris.MenuItemController();
-            var item = controller.GetMenuItemById(idMenu); 
+            var item = controller.GetMenuItemById(idMenu);
 
             if (item != null)
             {
@@ -38,9 +38,14 @@ namespace MieQueuee.View
                 harga = decimal.Parse(textBoxHarga.Text)
             };
 
-            controller.UpdateMenuItem(updatedItem); 
+            controller.UpdateMenuItem(updatedItem);
             MessageBox.Show("Menu berhasil diperbarui.");
             this.Close();
+        }
+
+        private void FormUpdateMenu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

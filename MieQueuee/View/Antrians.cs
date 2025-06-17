@@ -66,5 +66,10 @@ namespace MieQueuee.View
             this.Hide();
             dashboard.ShowDialog();
         }
+
+        private void dataGridViewAntrian_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

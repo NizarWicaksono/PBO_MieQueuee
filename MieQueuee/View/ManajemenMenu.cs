@@ -92,9 +92,9 @@ namespace MieQueuee.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TampilanMenu tampilanMenu = new TampilanMenu();
+            Dashboard dashboard = new Dashboard();
             this.Hide();
-            tampilanMenu.ShowDialog();
+            dashboard.ShowDialog();
         }
     }
 }

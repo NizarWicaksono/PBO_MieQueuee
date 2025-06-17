@@ -20,9 +20,9 @@ namespace MieQueuee.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TampilanMenu tampilanmenu = new TampilanMenu();
+            ManajemenMenu manajemenmenu = new ManajemenMenu();
             this.Hide();
-            tampilanmenu.ShowDialog();
+            manajemenmenu.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
