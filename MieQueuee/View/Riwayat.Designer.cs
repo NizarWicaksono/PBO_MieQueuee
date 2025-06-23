@@ -47,6 +47,7 @@
             dataGridViewTransaksi.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridViewTransaksi.Size = new Size(600, 200);
             dataGridViewTransaksi.TabIndex = 0;
+            dataGridViewTransaksi.CellContentClick += dataGridViewTransaksi_CellContentClick;
             dataGridViewTransaksi.SelectionChanged += dataGridViewTransaksi_SelectionChanged;
             // 
             // dataGridViewTextBoxColumn5

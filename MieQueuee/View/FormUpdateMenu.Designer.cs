@@ -32,16 +32,17 @@
             labelNama.AutoSize = true;
             labelNama.Location = new Point(30, 30);
             labelNama.Name = "labelNama";
-            labelNama.Size = new Size(76, 15);
+            labelNama.Size = new Size(93, 20);
             labelNama.TabIndex = 0;
             labelNama.Text = "Nama Menu:";
+            labelNama.Click += labelNama_Click;
             // 
             // labelHarga
             // 
             labelHarga.AutoSize = true;
-            labelHarga.Location = new Point(30, 70);
+            labelHarga.Location = new Point(30, 81);
             labelHarga.Name = "labelHarga";
-            labelHarga.Size = new Size(42, 15);
+            labelHarga.Size = new Size(53, 20);
             labelHarga.TabIndex = 2;
             labelHarga.Text = "Harga:";
             // 
@@ -49,19 +50,19 @@
             // 
             textBoxNama.Location = new Point(170, 30);
             textBoxNama.Name = "textBoxNama";
-            textBoxNama.Size = new Size(200, 23);
+            textBoxNama.Size = new Size(200, 27);
             textBoxNama.TabIndex = 1;
             // 
             // textBoxHarga
             // 
-            textBoxHarga.Location = new Point(170, 67);
+            textBoxHarga.Location = new Point(170, 78);
             textBoxHarga.Name = "textBoxHarga";
-            textBoxHarga.Size = new Size(200, 23);
+            textBoxHarga.Size = new Size(200, 27);
             textBoxHarga.TabIndex = 3;
             // 
             // buttonSimpan
             // 
-            buttonSimpan.Location = new Point(211, 104);
+            buttonSimpan.Location = new Point(225, 130);
             buttonSimpan.Name = "buttonSimpan";
             buttonSimpan.Size = new Size(88, 45);
             buttonSimpan.TabIndex = 4;

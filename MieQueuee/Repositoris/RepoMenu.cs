@@ -3,16 +3,17 @@ using MieQueuee.Model;
 using Npgsql;
 using System.Collections.Generic;
 
-namespace MieQueuee.MenuRepositoris
+namespace MieQueuee.Controller
 {
-    public class MenuItemController
+    public class MenuItemController : Connection, IMenu<MenuItem>
     {
         public List<MenuItem> GetAllMenuItems()
         {
             var list = new List<MenuItem>();
 
-            using (var conn = DatabaseHelper.GetConnection())
+            using (var conn = GetConnection())
             {
+                conn.Open();
                 string query = "SELECT * FROM menus ORDER BY id_menu ASC";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 using (var reader = cmd.ExecuteReader())
@@ -34,8 +35,9 @@ namespace MieQueuee.MenuRepositoris
         public MenuItem GetMenuItemById(int id)
         {
             MenuItem item = null;
-            using (var conn = DataBase.DatabaseHelper.GetConnection())
+            using (var conn = GetConnection())
             {
+                conn.Open();
                 string query = "SELECT id_menu, nama_menu, harga FROM menus WHERE id_menu = @id";
 
                 using (var cmd = new NpgsqlCommand(query, conn))
@@ -60,8 +62,9 @@ namespace MieQueuee.MenuRepositoris
         }
         public void UpdateMenuItem(MenuItem item)
         {
-            using (var conn = DataBase.DatabaseHelper.GetConnection())
+            using (var conn = GetConnection())
             {
+                conn.Open();
                 string query = "UPDATE menus SET nama_menu = @nama_menu, harga = @harga WHERE id_menu = @id_menu";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
@@ -74,8 +77,9 @@ namespace MieQueuee.MenuRepositoris
         }
         public void DeleteMenuItem(int id)
         {
-            using (var conn = DataBase.DatabaseHelper.GetConnection())
+            using (var conn = GetConnection())
             {
+                conn.Open();
                 string query = "DELETE FROM menus WHERE id_menu = @id_menu";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
@@ -84,10 +88,11 @@ namespace MieQueuee.MenuRepositoris
                 }
             }
         }
-        public static void Tambah(MenuItem item)
+        public void AddMenuItem(MenuItem item)
         {
-            using (var conn = DataBase.DatabaseHelper.GetConnection())
+            using (var conn = GetConnection())
             {
+                conn.Open();
                 string query = "INSERT INTO menus (nama_menu, harga) VALUES (@nama_menu, @harga)";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {

@@ -1,5 +1,4 @@
 ﻿using MieQueuee.Controller;
-using MieQueuee.MenuRepositoris;
 using MieQueuee.Model;
 using System;
 using System.Collections.Generic;
@@ -69,12 +68,6 @@ namespace MieQueuee.View
                 MessageBox.Show("Keranjang kosong.");
                 return;
             }
-            if (!int.TryParse(txtUserId.Text, out int userId))
-            {
-                MessageBox.Show("User ID tidak valid!");
-                return;
-            }
-
             string namaPelanggan = txtNamaPelanggan.Text.Trim();
             if (string.IsNullOrWhiteSpace(namaPelanggan))
             {
@@ -87,10 +80,9 @@ namespace MieQueuee.View
             var transaksi = new Transaksi
             {
                 total = total,
-                user_id = userId,
                 nama_pelanggan = namaPelanggan
             };
-            var daftarAntrian = new List<Antrian>();
+            var daftarAntrian = new List<Detail_Transaksi>();
 
             foreach (DataGridViewRow row in dataGridViewKeranjang.Rows)
             {
@@ -101,9 +93,8 @@ namespace MieQueuee.View
                 if (!int.TryParse(row.Cells[2].Value?.ToString(), out int jumlah)) jumlah = 0;
                 if (!int.TryParse(row.Cells[3].Value?.ToString(), out int subtotal)) subtotal = 0;
 
-                daftarAntrian.Add(new Antrian
+                daftarAntrian.Add(new Detail_Transaksi
                 {
-                    user_id = userId,
                     nama_pelanggan = namaPelanggan,
                     nama_menu = namaMenu,
                     harga = harga,
@@ -121,7 +112,6 @@ namespace MieQueuee.View
 
                 dataGridViewKeranjang.Rows.Clear();
                 labelTotal.Text = "Total: Rp 0";
-                txtUserId.Clear();
                 txtNamaPelanggan.Clear();
             }
             catch (Exception ex)
@@ -138,6 +128,16 @@ namespace MieQueuee.View
         }
 
         private void txtUserId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormTransaksi_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewKeranjang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

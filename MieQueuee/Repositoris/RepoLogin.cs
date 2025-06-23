@@ -6,12 +6,13 @@ using System.Data.SqlClient;
 
 namespace MieQueuee.Controller
 {
-    public class LoginController
+    public class LoginController : Connection
     {
         public Users Login(string username, string password)
         {
-            using (var conn = DatabaseHelper.GetConnection())
+            using (var conn = GetConnection())
             {
+                conn.Open();
                 var cmd = new NpgsqlCommand("SELECT id_user, username FROM users WHERE username = @u AND password = @p", conn);
                 cmd.Parameters.AddWithValue("@u", username);
                 cmd.Parameters.AddWithValue("@p", password);

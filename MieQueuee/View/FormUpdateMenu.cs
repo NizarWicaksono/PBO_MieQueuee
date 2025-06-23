@@ -18,7 +18,7 @@ namespace MieQueuee.View
 
         private void LoadMenuData()
         {
-            var controller = new MenuRepositoris.MenuItemController();
+            IMenu<MenuItem> controller = new MenuItemController();
             var item = controller.GetMenuItemById(idMenu);
 
             if (item != null)
@@ -30,7 +30,7 @@ namespace MieQueuee.View
 
         private void buttonSimpan_Click(object sender, EventArgs e)
         {
-            var controller = new MenuRepositoris.MenuItemController();
+            IMenu<MenuItem> controller = new MenuItemController();
             var updatedItem = new MenuItem
             {
                 id_menu = idMenu,
@@ -44,6 +44,11 @@ namespace MieQueuee.View
         }
 
         private void FormUpdateMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNama_Click(object sender, EventArgs e)
         {
 
         }

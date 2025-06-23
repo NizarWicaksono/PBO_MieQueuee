@@ -21,7 +21,7 @@ namespace MieQueuee.View
 
         private void TampilkanMenu()
         {
-            MenuRepositoris.MenuItemController controller = new MenuRepositoris.MenuItemController();
+            IMenu<MenuItem> controller = new MenuItemController();
             var dataMenu = controller.GetAllMenuItems();
 
             dataGridView1.Rows.Clear();
@@ -67,7 +67,7 @@ namespace MieQueuee.View
                     var confirm = MessageBox.Show("Yakin ingin menghapus menu ini?", "Konfirmasi", MessageBoxButtons.YesNo);
                     if (confirm == DialogResult.Yes)
                     {
-                        var controller = new MenuRepositoris.MenuItemController();
+                        IMenu<MenuItem> controller = new MenuItemController();
                         controller.DeleteMenuItem(id);
                         TampilkanMenu();
                     }

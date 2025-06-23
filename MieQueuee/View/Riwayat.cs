@@ -83,5 +83,10 @@ namespace MieQueuee.View
             this.Hide();
             dashboard.ShowDialog();
         }
+
+        private void dataGridViewTransaksi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

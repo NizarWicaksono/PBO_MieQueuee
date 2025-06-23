@@ -9,12 +9,12 @@ namespace MieQueuee.View
 {
     public partial class FormAntrian : Form
     {
-        private TransaksiController transaksiController;
+        private AntrianController transaksiController;
 
         public FormAntrian()
         {
             InitializeComponent();
-            transaksiController = new TransaksiController();
+            transaksiController = new AntrianController();
             LoadAntrian();
         }
 
@@ -26,7 +26,7 @@ namespace MieQueuee.View
             foreach (var antrian in antrianList)
             {
                 dataGridViewAntrian.Rows.Add(
-                    antrian.id_antrian,
+                    antrian.Id,
                     antrian.nama_pelanggan,
                     antrian.nama_menu,
                     antrian.harga,
@@ -50,7 +50,7 @@ namespace MieQueuee.View
 
             try
             {
-                transaksiController.UpdateStatusAntrian(idAntrian, "Selesai");
+                transaksiController.UpdateStatusAntrianGoToFinish(idAntrian, "Selesai");
                 MessageBox.Show("Status antrian diperbarui menjadi 'Selesai'");
                 LoadAntrian();
             }
@@ -68,6 +68,11 @@ namespace MieQueuee.View
         }
 
         private void dataGridViewAntrian_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void FormAntrian_Load(object sender, EventArgs e)
         {
 
         }

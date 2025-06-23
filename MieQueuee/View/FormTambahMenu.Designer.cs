@@ -22,50 +22,52 @@ namespace MieQueuee.View
             // 
             // textBoxNamaMenu
             // 
-            textBoxNamaMenu.Location = new Point(148, 20);
+            textBoxNamaMenu.Location = new Point(170, 30);
             textBoxNamaMenu.Name = "textBoxNamaMenu";
-            textBoxNamaMenu.Size = new Size(150, 23);
+            textBoxNamaMenu.Size = new Size(200, 27);
             textBoxNamaMenu.TabIndex = 1;
             textBoxNamaMenu.TextChanged += textBoxNamaMenu_TextChanged;
             // 
             // textBoxHarga
             // 
-            textBoxHarga.Location = new Point(148, 52);
+            textBoxHarga.Location = new Point(170, 78);
             textBoxHarga.Name = "textBoxHarga";
-            textBoxHarga.Size = new Size(150, 23);
+            textBoxHarga.Size = new Size(200, 27);
             textBoxHarga.TabIndex = 3;
             // 
             // labelNama
             // 
             labelNama.AutoSize = true;
-            labelNama.Location = new Point(20, 20);
+            labelNama.Location = new Point(30, 30);
             labelNama.Name = "labelNama";
-            labelNama.Size = new Size(76, 15);
+            labelNama.Size = new Size(93, 20);
             labelNama.TabIndex = 0;
             labelNama.Text = "Nama Menu:";
             // 
             // labelHarga
             // 
             labelHarga.AutoSize = true;
-            labelHarga.Location = new Point(20, 55);
+            labelHarga.Location = new Point(30, 81);
             labelHarga.Name = "labelHarga";
-            labelHarga.Size = new Size(42, 15);
+            labelHarga.Size = new Size(53, 20);
             labelHarga.TabIndex = 2;
             labelHarga.Text = "Harga:";
             // 
             // buttonTambah
             // 
-            buttonTambah.Location = new Point(167, 89);
+            buttonTambah.BackColor = SystemColors.HighlightText;
+            buttonTambah.Location = new Point(225, 130);
             buttonTambah.Name = "buttonTambah";
-            buttonTambah.Size = new Size(100, 30);
+            buttonTambah.Size = new Size(88, 45);
             buttonTambah.TabIndex = 4;
             buttonTambah.Text = "Tambah";
+            buttonTambah.UseVisualStyleBackColor = false;
             buttonTambah.Click += buttonTambah_Click;
             // 
             // FormTambahMenu
             // 
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(442, 227);
+            ClientSize = new Size(398, 267);
             Controls.Add(labelNama);
             Controls.Add(textBoxNamaMenu);
             Controls.Add(labelHarga);

@@ -90,8 +90,10 @@
             // dataGridViewTextBoxColumn7
             // 
             dataGridViewTextBoxColumn7.HeaderText = "Harga";
+            dataGridViewTextBoxColumn7.MinimumWidth = 8;
             dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             dataGridViewTextBoxColumn7.ReadOnly = true;
+            dataGridViewTextBoxColumn7.Width = 150;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -127,6 +129,7 @@
             Controls.Add(buttonSelesai);
             Name = "FormAntrian";
             Text = "Antrian Dapur";
+            Load += FormAntrian_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewAntrian).EndInit();
             ResumeLayout(false);
         }
